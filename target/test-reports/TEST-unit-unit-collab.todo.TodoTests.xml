@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="0" hostname="nabucodonosor" name="collab.todo.TodoTests" tests="2" time="2.973" timestamp="2011-07-08T16:15:57">
+  <properties />
+  <testcase classname="collab.todo.TodoTests" name="testPersist" time="2.561">
+    <error message="Cannot query [collab.todo.Todo] on non-indexed property: name:java.lang.String" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: Cannot query [collab.todo.Todo] on non-indexed property: name:java.lang.String
+	at org.grails.datastore.gorm.finders.AbstractFindByFinder.invokeQuery(AbstractFindByFinder.java:34)
+	at org.grails.datastore.gorm.finders.AbstractFindByFinder$1.doInSession(AbstractFindByFinder.java:26)
+	at org.grails.datastore.gorm.finders.AbstractFinder.execute(AbstractFinder.java:36)
+	at org.grails.datastore.gorm.finders.AbstractFindByFinder.doInvokeInternal(AbstractFindByFinder.java:23)
+	at org.grails.datastore.gorm.finders.DynamicFinder.invoke(DynamicFinder.java:137)
+	at org.grails.datastore.gorm.finders.DynamicFinder.invoke(DynamicFinder.java:284)
+	at org.grails.datastore.gorm.finders.FinderMethod$invoke.call(Unknown Source)
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:91)
+	at collab.todo.Todo.$static_methodMissing(Todo.groovy)
+	at collab.todo.TodoTests.testPersist(TodoTests.groovy:26)
+</error>
+  </testcase>
+  <testcase classname="collab.todo.TodoTests" name="testToString" time="0.371">
+    <error message="No signature of method: collab.todo.TodoTests.assertToString() is applicable for argument types: (java.lang.String, java.lang.String) values: [Pickup laundry, Pickup laundry]&#xa;Possible solutions: testToString()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: collab.todo.TodoTests.assertToString() is applicable for argument types: (java.lang.String, java.lang.String) values: [Pickup laundry, Pickup laundry]
+Possible solutions: testToString()
+	at collab.todo.TodoTests.testToString(TodoTests.groovy:33)
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from testPersist--
+--Output from testToString--
+]]></system-out>
+  <system-err><![CDATA[--Output from testPersist--
+--Output from testToString--
+]]></system-err>
+</testsuite>
