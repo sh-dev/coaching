@@ -5,6 +5,8 @@ class User {
 	String firstName
 	String lastName
 
+	static hasMany = [todos: Todo, categories: Category]
+
 	static mapping = {
 		userName  index:true
 	}
