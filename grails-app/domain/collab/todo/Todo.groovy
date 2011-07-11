@@ -10,6 +10,10 @@ class Todo {
     String priority
     String status
 
+    static mapping = {
+        name index:true
+    }
+
     static constraints = {
         name unique:true
         createdDate()
