@@ -30,7 +30,7 @@ class TodoTests {
 
     void testToString() {
         def todo = new Todo(name: "Pickup laundry")
-        assertToString(todo, "Pickup laundry")
+        assert todo.toString() == "Pickup laundry"
     }
 
 }
