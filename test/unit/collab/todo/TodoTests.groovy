@@ -33,6 +33,4 @@ class TodoTests {
         assertToString(todo, "Pickup laundry")
     }
 
-    void testSomething() {
-    }
 }
