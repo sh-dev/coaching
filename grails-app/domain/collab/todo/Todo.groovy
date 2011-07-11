@@ -15,7 +15,7 @@ class Todo {
     }
 
     static constraints = {
-        name unique:true
+        name blank:false, unique:true
         createdDate()
         priority()
         status()
@@ -25,6 +25,6 @@ class Todo {
     }
 
     String toString() {
-        return name
+        name
     }
 }
