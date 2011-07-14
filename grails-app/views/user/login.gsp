@@ -17,7 +17,7 @@
 				<span class='nameClear'>
 					<label for="login">Sign In:</label>
 				</span>
-				<g:select name='userName' from="${User.list()}" optionKey="userName" optionValue="userName"></g:select>
+				<g:select name='userName' from="${collab.todo.User.list()}" optionKey="userName" optionValue="userName"></g:select>
 				<br />
 				<div class="buttons">
 					<span class="button">
